@@ -1,0 +1,124 @@
+:root {
+    --var-primary-color: rgb(139, 176, 255);
+    --var-secudary-color: #162938;
+}
+
+html {
+    background: rgb(2,0,36);
+    background: linear-gradient(70deg, rgba(2,0,36,1) 0%, rgba(46,46,235,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 600px;
+    height: 440px;
+    background-color: white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 42px;
+}
+
+.form-box h2 {
+    margin-bottom: 3em;
+    font-size: 2em;
+    color: var(--var-secudary-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;  
+    margin: 40px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #162938;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-bottom: 2px solid var(--var-secudary-color);
+    outline: none;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: var(--var-secudary-color);
+    line-height: 57px;
+}
+
+.btn {
+    padding: 1.4em;
+    background-color: var(--var-secudary-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+legend, 
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    padding: 0.75em;
+    margin: .5em 0 2.4em;
+    color: black;
+    outline: 0; /*outline resovle o problema da borda do focus !*/
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+    border-bottom: 2px solid red;
+}
+
+input:valid:focus,
+textarea:valid:focus {
+    border-bottom: 2px solid green;
+}
+
