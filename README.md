@@ -7,7 +7,7 @@ Redirecionamento para o meu LinkedIn: Ao clicar no botão "Enviar", os usuários
 
 **Como utilizar**
 1.Clone este repositório em sua máquina local utilizando o comando:
-    **git clone https://github.com/seu-usuario/nome-do-repositorio.git**
+    **git clone https://github.com/seu-usuario/Login.git**
 2. Abra o arquivo index.html em um navegador da web.
 3. Insira suas credenciais de login nos campos correspondentes.
 4. Clique no botão de visualização de senha para ver sua senha, se desejar.
